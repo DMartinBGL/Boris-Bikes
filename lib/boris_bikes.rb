@@ -1,3 +1,5 @@
 class DockingStation
-  #def initialize(name)
+  def release_bike(bike)
+    
+  end
 end
