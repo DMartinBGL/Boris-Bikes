@@ -5,6 +5,10 @@ class DockingStation
 end
 
 class Bike
+  def initialize
+    @isWorking = true
+  end
   def working?
+    return @isWorking
   end
 end
