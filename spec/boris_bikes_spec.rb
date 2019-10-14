@@ -1,11 +1,14 @@
 require 'boris_bikes'
 
 describe DockingStation do
-  it 'releases bikes' do
-    docking_station = DockingStation.new
-    expect(docking_station).to respond_to(:release_bike)
+  describe "Testing to see if Boris Bike responds " do
+    it { is_expected.to respond_to (:release_bike) }
   end
 
-  #it 'asks if the bike is working?' do
+  it 'Testing to see if the bike is working' do
+    bike = Bike.new
+    expect(bike).to respond_to(:working?)
+  end
 
 end
+  #it 'asks if the bike is working?' do
