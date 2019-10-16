@@ -37,4 +37,13 @@ describe DockingStation do
       expect { subject.dock Bike.new }.to raise_error "Docking station full"
     end
   end
+
+  describe '#initialize' do
+    it 'initialize a default capacity for a new docking station'do
+    expect (subject.capacity).to eq DockingStation::DEFAULT_CAPACITY
+    end
+  end
+
+
+
 end
